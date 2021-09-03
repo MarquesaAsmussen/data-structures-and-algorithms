@@ -27,15 +27,6 @@ const addValues = (arr) => {
   return arr.reduce((a, b) => a + b, 0);
 };
 
-
-// describe('Testing challenge 2', () => {
-//   test('It should add the values of an array', () => {
-//     expect(addValues([1, 2, 3, 4, 5])).toStrictEqual(15);
-//     expect(addValues([])).toStrictEqual(0);
-//     expect(addValues([1, 2, 3, 4, -5])).toStrictEqual(5);
-//   });
-// });
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -52,14 +43,6 @@ const addPurchases = (arr) => {
   return arr.reduce((a, b) => a + b.purchasePrice, 0);
 };
 
-
-// describe('Testing challenge 3', () => {
-//   test('It should add the purchase price', () => {
-//     expect(addPurchases([{item: 'switch', purchasePrice: 399}, {item: 'toothpaste', purchasePrice: 2}])).toStrictEqual(401);
-//     expect(addPurchases([])).toStrictEqual(0);
-//   });
-// });
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
@@ -69,7 +52,8 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
-  return arr.reduce((x, y) => (((x - x) + 1) + y) - 1, 0);
+  // return arr.reduce((x, y) => (((x - x) + 1) + y) - 1, 0);
+  return arr.reduce( x => x + 1, 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -129,7 +113,11 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
-  return arr.reduce((a, b) => a + b['name'] + ',' + ' ', '');
+  // return arr.reduce((a, b) => a + b['name'] + ',' + ' ', '');
+  return arr.reduce((a, b) => {
+    a.push(b.name);
+    return a;
+  }, []);
 };
 
 
@@ -153,14 +141,16 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 ------------------------------------------------------------------------------------------------ */
 
 const reversedString = (str) => {
-  return str.reduce();
+  return str.split('').reduce((a, b) => b + a, '');
 };
 
-describe('Testing challenge 6', () => {
-  test('It should return the string with the characters in reverse order', () => {
-    expect(reversedString('Code 301')).toStrictEqual('103 edoC');
-  });
-});
+
+
+// describe('Testing challenge 6', () => {
+//   test('It should return the string with the characters in reverse order', () => {
+//     expect(reversedString('Code 301')).toStrictEqual('103 edoC');
+//   });
+// });
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
