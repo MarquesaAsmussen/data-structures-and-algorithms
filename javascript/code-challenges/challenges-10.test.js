@@ -183,15 +183,19 @@ The top row of the board is considered row zero and row numbers increase as they
 ------------------------------------------------------------------------------------------------ */
 
 const battleship = (board, row, col) => {
-  row = board[i];
-  col = row[i];
-  board.map();
+  console.log(board);
+  console.log(row);
+  console.log(col);
 
-  if ("#") {
-    return hit;
-  } else {
-    return miss;
-  }
+  // row = board[i];
+  // col = row[i];
+  // board.map();
+
+  // if ("#") {
+  //   return hit;
+  // } else {
+  //   return miss;
+  // }
 };
 
 /* ------------------------------------------------------------------------------------------------
