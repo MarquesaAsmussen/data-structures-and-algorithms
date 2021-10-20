@@ -8,45 +8,45 @@ Write a function called insertShiftArray which takes in an array and a value to 
 
 ## Approach & Efficiency
 
-<!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
+See below. Wasn't sure whether to follow the short README.md template in the assignment page, or the more extensive one in the guidelines.
 
-<!-- ---------------------------------------------- -->
-<!-- ## Inputs / Outputs
+## Inputs / Outputs
 
-Input: `[1, 2, 3, 4, 5, 6]`\
-Output: `[6, 5, 4, 3, 2, 1]`
+Input: `[1, 2, 4, 5], 3`\
+Output: `[1, 2, 3, 4, 5]`
 
 ## Algorithm
 
-If we can grab the ends of the array, we can just swap their values.
+If we can find the length of the array, we can determine what the middle index value should be and push the new value into the array at that index.
 
+- create a new empty array
+- determine the middle of the array
 - Use a for loop to look at all the elements in the array.(iterating through the array).
-- At each item, I swap with the inverse array index.
-- Only go half way (give of take 1) and stop.
-  - If we don't stop halfway we will re-swap.
+- Use an if statement to determine if [i] is at the middle index value
+- if at middle value, push the new value to the new array
+- if not at middle value, push the current value being iterated over
 
 ## Pseudocode
 
 ```plaintext
 
-function Reverse-Array takes in `arr`:
+function arrayInsert takes in `arr`:
 
+  declare insertedArr = [];
   declare start <- 0;
   declare end <- length of arr minus 1;
 
   while start <= end:
-    declare temp <- arr[start]
-    arr[start] <- arr[end]
-    arr[end] <- temp
-    start = start + 1
-    end  = end - 1
+    declare valueForInsert
+    declare middleIndex value
+    arr[current] != middleIndex ? insertedArr push valueForInsert : insertedArr push arr[current]
 
 ```
 
 ## Actual Code
 
-(This would be a file that lives here)
+Not sure, but was under the imporession that this was not required?
 
 ## Visual
 
-![Array reversal](./array-reverse.png) -->
+![Array insert](array-insert-shift.png
