@@ -4,7 +4,7 @@ Write a function called insertShiftArray which takes in an array and a value to 
 
 ## Whiteboard Process
 
-![Array Insert Visual](./code-challenge-2.png)
+![Array Insert Visual](./array-insert-shift-update.png)
 
 ## Approach & Efficiency
 
@@ -49,4 +49,4 @@ Not sure, but was under the imporession that this was not required?
 
 ## Visual
 
-![Array insert](array-insert-shift.png
+![Array insert](./array-insert-shift-update.png)
