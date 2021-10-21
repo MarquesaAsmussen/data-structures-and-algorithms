@@ -7,44 +7,45 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 
 ## Whiteboard Process
 
-![binary sort Visual]()
+![binary sort Visual](./array-binary-search.png)
 
 ## Approach & Efficiency
 
 ## Inputs / Outputs
 
+| Input                               | Output |
+| ----------------------------------- | ------ |
+| [4, 8, 15, 16, 23, 42], 15          | 2      |
+| [-131, -82, 0, 27, 42, 68, 179], 42 | 4      |
+| [11, 22, 33, 44, 55, 66, 77], 90    | -1     |
+| [1, 2, 3, 5, 6, 7], 4               | -1     |
+
 ## Algorithm
 
-<!-- If we can find the length of the array, we can determine what the middle index value should be and push the new value into the array at that index.
-
-- create a new empty array
-- determine the middle of the array
-- Use a for loop to look at all the elements in the array.(iterating through the array).
-- Use an if statement to determine if [i] is at the middle index value
-- if at middle value, push the new value to the new array
-- if not at middle value, push the current value being iterated over -->
+<!-- -->
 
 ## Pseudocode
 
-<!-- ```plaintext
+```plaintext
 
-function arrayInsert takes in `arr`:
+function BinarySearch takes in `arr` and `searchKey`:
 
-  declare insertedArr = [];
-  declare start <- 0;
-  declare end <- length of arr minus 1;
+  declare start = 0;
+  declare end = length of arr minus 1;
 
   while start <= end:
-    declare valueForInsert
     declare middleIndex value
-    arr[current] != middleIndex ? insertedArr push valueForInsert : insertedArr push arr[current]
+    if middleIndex value === searchKey, true
+    else if middleIndex value < searchKey, start = searchKey + 1
+    else end = mid - 1
+  false
 
-``` -->
+```
 
 ## Actual Code
 
-<!-- Not sure, but was under the imporession that this was not required? -->
+<!-- Not sure, but was under the impression that this was not required? -->
 
 ## Visual
 
-![]()
+![binary sort Visual](./array-binary-search.png)
