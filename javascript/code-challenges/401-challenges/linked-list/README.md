@@ -4,7 +4,7 @@
 
 ## Challenge
 
-<!-- Description of the challenge -->
+instantiate and insert into a singly linked list
 
 ## Approach & Efficiency
 
